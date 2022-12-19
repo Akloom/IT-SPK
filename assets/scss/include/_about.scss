@@ -1,0 +1,32 @@
+.about{
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+
+  h1{
+    max-width: 186px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    color: $color-blue-750;
+  }
+
+  p{
+    max-width: 821px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: $color-black-800;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .about{
+    margin-top: 40px;
+    gap: 30px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}

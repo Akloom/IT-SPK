@@ -1,7 +1,7 @@
 @import './var';
 @import './fonts';
 
-*{
+* {
   margin: 0;
   padding: 0;
   color: inherit;
@@ -15,18 +15,22 @@
   font-family: inherit;
 }
 
-.container{
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.bg{
+.bg {
   background: url('../img/images/bg-image.png') no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.wrapper{
+.wrapper {
   font-family: "Montserrat", sans-serif;
 }
 

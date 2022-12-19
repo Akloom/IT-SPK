@@ -27,6 +27,10 @@
   font-family: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -332,6 +336,36 @@
   }
   .banner-desc {
     display: none;
+  }
+}
+.about {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.about h1 {
+  max-width: 186px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  color: #001E42;
+}
+.about p {
+  max-width: 821px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #252D37;
+}
+
+@media screen and (max-width: 920px) {
+  .about {
+    margin-top: 40px;
+    gap: 30px;
+    padding: 0 20px;
+    text-align: center;
   }
 }
 
