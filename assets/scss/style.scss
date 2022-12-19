@@ -23,6 +23,7 @@
 .bg{
   background: url('../img/images/bg-image.png') no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .wrapper{
@@ -30,3 +31,5 @@
 }
 
 @import './layout/header';
+@import './include/banner';
+@import './include/about';

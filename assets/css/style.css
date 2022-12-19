@@ -8,6 +8,11 @@
   src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
   font-weight: 700;
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
+  font-weight: 900;
+}
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +35,7 @@
 .bg {
   background: url("../img/images/bg-image.png") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .wrapper {
@@ -216,6 +222,116 @@
   }
   .header-nav a {
     text-align: center;
+  }
+}
+.banner {
+  padding: 40px 0 70px 0;
+  display: flex;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+}
+.banner-content h1 {
+  max-width: 568px;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 110%;
+  color: #00FEFF;
+}
+.banner-content__info {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+}
+.banner-content__info h3 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 103.32%;
+  color: #00FEFF;
+}
+.banner-content__info p {
+  max-width: 230px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.banner-content__info p span {
+  font-size: 36px;
+}
+.banner-content a {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: max-content;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 14px 22px;
+  border: 1px solid #00FEFF;
+  background: #00FEFF;
+  color: #002047;
+  transition: 0.6s all;
+}
+.banner-content a:hover {
+  background: none;
+  color: #FFFFFF;
+}
+.banner-content__btn-icon {
+  width: 25px;
+  height: 25px;
+  fill: #001E42;
+  transition: 0.6s all;
+}
+.banner-desc {
+  max-width: 460px;
+  margin-top: auto;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.banner-content a:hover .banner-content__btn-icon {
+  fill: #FFFFFF;
+}
+
+@media screen and (max-width: 920px) {
+  .banner {
+    padding: 30px 20px;
+  }
+  .banner-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .banner-content__info {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .banner-desc {
+    display: none;
+  }
+}
+@media screen and (max-width: 520px) {
+  .banner-content h1 {
+    font-size: 36px;
+  }
+  .banner-content__info {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .banner-desc {
+    display: none;
   }
 }
 
